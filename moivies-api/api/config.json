@@ -1,5 +1,5 @@
 {
     "jwt_secret": "secter-text-asd76as7dg",
     "movie_api_url":"https://api.themoviedb.org/3/discover/movie",
-    "movie_api_key": "251bbb27b61b5b3fc97ee9cca657b3dc"
+    "movie_api_key": ""
 }
