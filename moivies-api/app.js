@@ -16,7 +16,7 @@ mongoose.connect(db_url)
 
 
 mongoose.connection.on('error', err => {
-    console.log('connection fail');
+    console.log('db connection fail');
 })
 
 mongoose.connection.on('connected', connected => {
