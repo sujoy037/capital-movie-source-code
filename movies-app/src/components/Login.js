@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import { postLogin } from "../api/inbdex";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert";
 
 const Login = (props) => {
@@ -78,9 +78,14 @@ const Login = (props) => {
                     placeholder="Enter password"
                   />
                 </div>
-                <button type="submit" className="btn btn-dark btn-lg btn-block mt-3">
-                  Sign in
-                </button>
+                <div className="d-flex align-items-center justify-content-between">
+                  <button type="submit" className="btn btn-dark btn-lg btn-block mt-3">
+                     { state.is_loading ? "Processing.." : "Sign in"}
+                  </button>
+                  <Link to="/register" className="btn btn-link btn-lg btn-block mt-3">
+                    Go to register
+                  </Link>
+                </div>
               </form>
 
             </div>

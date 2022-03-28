@@ -1,4 +1,4 @@
-.logo{
+.logo {
     font-weight: 800;
     color: #000;
 }
@@ -10,37 +10,34 @@
     justify-content: center;
     /* margin: 1em 0; */
     /* margin-left: 25em; */
-    margin-top: 4rem;
-  }
-  
-  .pagination button {
+    margin-top: 2rem;
+}
+
+.pagination button {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color 0.3s;
-  }
-
-  .navbar-light {
-    background-color: #ffffff;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  }
-
-  
-
-  button.btn{
-    margin: 4px 5px;
-    border: 1px solid #aaa;
-  }
-  
-button.active{
-  background-color: #000;
-  color: #ffffff;
-  font-weight: bold;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
+.navbar-light {
+    background-color: #ffffff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
 
-.nav-active{
-  color: aqua !important;
+button.btn {
+    margin: 4px 5px;
+    border: 1px solid #aaa;
+}
+
+button.active {
+    background-color: #000;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-active {
+    color: aqua !important;
 }

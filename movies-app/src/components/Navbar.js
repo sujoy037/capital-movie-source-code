@@ -4,7 +4,7 @@ import { logout } from '../api/inbdex'
 
 const Navbar = ({ user, handleReload }) => {
 
-  const handleLogout = async ()=>{
+  const handleLogout = async () => {
     await logout()
     handleReload()
   }
@@ -24,16 +24,31 @@ const Navbar = ({ user, handleReload }) => {
             <li className="nav-item"><NavLink className="nav-link" activeClassName="nav-active" to='/discover/favourites'>Favourites</NavLink></li>
             {
               user ?
-                <li className="nav-item">
-                  <div className="nav-link text-info" >
-                    <b>
-                      {/* {user.username} */}
-                      <div style={{ cursor: "pointer" }} onClick={handleLogout} >
-                        Logout
-                      </div>
-                    </b>
-                  </div>
-                </li>
+                <>
+                  <li className="nav-item">
+                    <div className="nav-link text-danger" >
+                      <b>
+                        {/* {user.username} */}
+                        <div  style={{ cursor: "pointer" }} onClick={handleLogout} >
+                          Logout
+                        </div>
+                      </b>
+                    </div>
+                  </li>
+                  <li className="nav-item">
+                    <div className="nav-link text-info" >
+                      <b>
+                        {/* {user.username} */}
+                        <div style={{ cursor: "pointer" }} onClick={handleLogout} >
+                          {user.username}
+                        </div>
+                        {/* <div style={{ cursor: "pointer" }} onClick={handleLogout} >
+                          {user.email}
+                        </div> */}
+                      </b>
+                    </div>
+                  </li>
+                </>
                 :
                 <li className="nav-item"><Link className="nav-link" to='/login'>Login</Link></li>
             }

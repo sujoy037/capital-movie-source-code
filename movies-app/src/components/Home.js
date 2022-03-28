@@ -38,7 +38,7 @@ const Home = ({ user }) => {
           return alert(res.message)
         }
         return setList([...res?.data?.results])
-      }  else {
+      } else {
         setList([])
       }
 
@@ -67,11 +67,11 @@ const Home = ({ user }) => {
 
 
   useEffect(() => {
-    if (!user){
+    if (!user) {
       setFavList([])
     }
   }, [user])
-  
+
 
 
 
@@ -86,7 +86,6 @@ const Home = ({ user }) => {
           height: '75vh',
           overflowY: "auto",
           flexWrap: "wrap"
-
         }}
         >
           {
@@ -102,7 +101,6 @@ const Home = ({ user }) => {
                       <h5 className='my-4' >-- no data found --</h5>
                       :
                       <h5 className='my-4' >-- You are not authorize! Please login! --</h5>
-
                     :
                     favList?.map((movie, i) => <CardItem user={user} key={i} data={movie} reload={reload} is_reload={is_reload} thisIsFav={true} />)
                 )

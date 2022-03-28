@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import { getProfile } from "./api/inbdex";
 import LoginRoute from "./components/LoginRoute";
+import Register from "./components/Register";
 // import PrivateRoute from "./PrivateRoute";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
             <Navbar user={state.user} handleReload={handleReload} />
             <Routes>
               <Route exact path="/login" element={<Login user={state.user} handleReload={handleReload} />} />
+              <Route exact path="/register" element={<Register user={state.user} handleReload={handleReload} />} />
               <Route
                 path="/discover/:tag"
                 element={<Home user={state.user} />}
