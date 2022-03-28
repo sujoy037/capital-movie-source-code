@@ -1,6 +1,6 @@
 {
     "jwt_secret": "secter-text-asd76as7dg",
     "movie_api_url":"https://api.themoviedb.org/3/discover/movie",
-    "movie_api_key": "251bbb27b61b5b3fc97ee9cca657b3dc",
+    "movie_api_key": "b33f892bd5da0fa9f0bd0231f4e460e1",
     "db_url":"mongodb+srv://sujoy037:6o2anGPrthmznUy0@cluster0.akpdv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
