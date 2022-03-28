@@ -1,6 +1,7 @@
 const http=require('http');
 const app=require('./app')
+const PORT = process.env.PORT || 4000
 const server=http.createServer(app);
 
 
-server.listen(4000,console.log('server running'))
+server.listen(PORT,console.log('server running'))
